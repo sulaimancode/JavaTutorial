@@ -54,6 +54,9 @@ public class Animal {
 			this.setName(userInput.nextLine());
 			
 		}
+		
+		this.setFavoriteColor();
+		this.setUniqueID();
 	}
 	
 	public String getName() {
@@ -91,9 +94,17 @@ public class Animal {
 	public long getUniqueID() {
 		return uniqueID;
 	}
-
+	
 	public void setUniqueID(long uniqueID) {
 		this.uniqueID = uniqueID;
+		System.out.println("Unique ID set to " + this.uniqueID);
+	}
+	
+	public void setUniqueID() {
+		long minNumber = 1;
+		long maxNumber = 1000000;
+		
+		this.uniqueID = minNumber + (long) (Math.random() * ((maxNumber - minNumber) + 1));
 	}
 
 	public char getFavoriteChar() {
@@ -102,6 +113,13 @@ public class Animal {
 
 	public void setFavoriteChar(char favoriteChar) {
 		this.favoriteChar = favoriteChar;
+	}
+	
+	public void setFavoriteChar() {
+		int randomNumber = (int) (Math.random() * 126) + 1;
+		
+		this.favoriteChar = (char) randomNumber;
+		
 	}
 
 	public double getSpeed() {
