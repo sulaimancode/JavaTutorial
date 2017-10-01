@@ -23,7 +23,7 @@ public class Animal {
 	
 	protected static int numberOfAnimals = 0;
 	
-	static Scanner userinput = new Scanner(System.in);
+	static Scanner userInput = new Scanner(System.in);
 
 	public Animal() {
 		numberOfAnimals++;
@@ -55,7 +55,7 @@ public class Animal {
 			
 		}
 		
-		this.setFavoriteColor();
+		this.setFavoriteChar();
 		this.setUniqueID();
 	}
 	
@@ -105,6 +105,7 @@ public class Animal {
 		long maxNumber = 1000000;
 		
 		this.uniqueID = minNumber + (long) (Math.random() * ((maxNumber - minNumber) + 1));
+		System.out.println("Unique ID set to " + this.uniqueID);
 	}
 
 	public char getFavoriteChar() {
@@ -232,10 +233,26 @@ public class Animal {
 			
 		} while(number != 50);
 	}
+	
+	public String makeSound() {
+		
+		return "Grrrr";
+		
+	}
+	
+	public static void speakAnimal(Animal randAnimal) {
+		
+		System.out.println("Animal says " + randAnimal.makeSound());
+		
+	}
 
 	public static void main(String[] args) {
 		
 		Animal theAnimal = new Animal();
+		
+		int[] favoriteNumber;
+		
+		favoriteNumber = new int[20];
 		
 	}
 	
