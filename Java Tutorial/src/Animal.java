@@ -120,6 +120,34 @@ public class Animal {
 		
 		this.favoriteChar = (char) randomNumber;
 		
+		if(randomNumber == 32) {
+			
+			System.out.println("Favourite character set to Space");
+			
+		} else if(randomNumber == 10) {
+			
+			System.out.println("Favourite character set to Newline");
+			
+		} else {
+			
+			System.out.println("Favourite character set to " + this.favoriteChar);
+			
+		}
+		
+		if((randomNumber > 97) && (randomNumber < 122)) {
+			
+			System.out.println("Favourite character is a lowercase letter");
+			
+		}
+		
+		if(((randomNumber > 97) && (randomNumber < 122)) || ((randomNumber > 64) && (randomNumber < 91))) {
+			
+			System.out.println("Favourite character is a letter");
+			
+		}
+		
+		int whichIsBigger = (50 > randomNumber) ? 50 : randomNumber;
+		
 	}
 
 	public double getSpeed() {
