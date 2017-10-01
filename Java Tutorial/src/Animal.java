@@ -148,6 +148,24 @@ public class Animal {
 		
 		int whichIsBigger = (50 > randomNumber) ? 50 : randomNumber;
 		
+		switch(randomNumber) {
+		
+			case 8:
+				System.out.println("Favourite character set to backspace");
+				break;
+				
+			case 10:
+			case 11:
+			case 12:
+				System.out.println("Favourite character set to something else");
+				break;
+				
+			default :
+				System.out.println();
+				break;
+		
+		}
+		
 	}
 
 	public double getSpeed() {
