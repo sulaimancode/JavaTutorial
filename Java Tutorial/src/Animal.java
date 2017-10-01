@@ -23,12 +23,32 @@ public class Animal {
 	
 	protected static int numberOfAnimals = 0;
 	
-	static Scanner userinpute = new Scanner(System.in);
+	static Scanner userinput = new Scanner(System.in);
 
 	public Animal() {
-		super();
+		numberOfAnimals++;
+		
+		int sumOfNumbers = 5 + 1;
+		System.out.println("5 + 1 = " + sumOfNumbers);
+		
+		int diffOfNumbers = 5 - 1;
+		System.out.println("5 - 1 = " + diffOfNumbers);
+		
+		int multOfNumbers = 5 * 1;
+		System.out.println("5 x 1 = " + multOfNumbers);
+		
+		int divOfNumbers = 5 / 1;
+		System.out.println("5 / 1 = " + divOfNumbers);
+		
+		int modOfNumbers = 5 % 3;
+		System.out.println("5 % 3 = " + modOfNumbers);
 	}
 	
+	public static void main(String[] args) {
+		
+		Animal theAnimal = new Animal();
+		
+	}
 	
 	
 }
