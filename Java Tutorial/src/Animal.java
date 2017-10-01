@@ -183,6 +183,18 @@ public class Animal {
 	public void setHeight(float height) {
 		this.height = height;
 	}
+	
+	protected static void countTo(int startingNumber) {
+		
+		for(int i = startingNumber; i <= 100; i++) {
+			
+			if(i == 90) continue;
+			
+			System.out.println(i);
+			
+		}
+		
+	}
 
 	public static void main(String[] args) {
 		
